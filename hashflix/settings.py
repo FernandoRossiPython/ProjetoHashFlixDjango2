@@ -24,14 +24,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TOKEN_CSRF = os.getenv('TOKEN_CSRF')
 if TOKEN_CSRF:
     SECRET_KEY = TOKEN_CSRF
-    CSRF_TRUSTED_ORIGINS = ['https://projetohashflixdjango2-production.up.railway.app/']
+    CSRF_TRUSTED_ORIGINS = ['https://projetohashflixdjango2-production.up.railway.app']
 else:
     SECRET_KEY = 'django-insecure-*tmnt98%cxs!*h22p6y@#yz283pb6n5uq+uk4gq^$-!+!c2w1h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://projetohashflixdjango2-production.up.railway.app/", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["projetohashflixdjango2-production.up.railway.app", "localhost", "127.0.0.1"]
 
 
 # Application definition
